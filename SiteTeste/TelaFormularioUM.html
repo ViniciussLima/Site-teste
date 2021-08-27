@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<style>
+
+body{
+  background-color:  #F5DEB3;
+}
+
+  h1{
+    margin: auto;
+    width: 70%;
+    border: 3px solid lightblue;
+    padding: 10px;
+    text-align: center;
+  }
+  h3{ 
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+   }
+
+   button {
+    
+     margin: auto;
+     width: 22%;
+     padding: 10px;
+   }
+
+   a {
+     margin: auto;
+     border:3px solid lightcoral;
+     padding: 10px;
+     text-align: center;
+   }
+  
+div #Mostrar 
+   {
+    
+    margin: auto;
+   }
+
+   .container-fluid {
+    max-width: 900px;
+}
+
+
+section div:first-child {
+  position: relative;
+}
+section div:last-child {
+  position: relative;
+}
+
+</style>
+
+<body>
+<br>
+<h1>CONFIGURAÇÃO</h1>
+<br>
+
+<div > <label for="input-id" class="col-sm-2"></label>
+
+<div class="col-dm-2">
+  <form>
+      <button formaction="file:.../index.html" name="Botao1" class="media-bottom" > Home </button>
+      <button name="Botao2" class="media-bottom"> Temperature Scale</button>
+      <button name="Botao3" class="media-bottom">Analag Scale</button>
+  </form>
+  
+</div>
+
+<br>
+</div>
+</div>
+</div>
+<br>
+
+<!-- <div id="aba" style="position: fixed">
+  <a class=" button "  role="button">Nova-ABA</a> 
+  <span class="btn" id="fechar"> x </span>  </div>
+<script>
+  var fechado = true;
+$("#aba").click(function(){
+    if (fechado){
+        $("#aba").animate({ left: "50px"});
+        fechado = false;}});
+$("#fechar").click(function(e){ // Recebe o evento como parâmetro do listener
+    if (fechado == false){
+        $("#aba").animate({left: "0px"}); // Você tem que fechar a #aba, não o #fechar
+        fechado = true;}
+    e.stopPropagation(); // Manda o navegador parar de "subir o evento" para os próximos elementos.});-->
+
+</script>
+ <div style="width: 70;"> 
+   <label for="input-id" class="col-sm-2"></label>
+<div name="BOTAO COM href">  
+  <button style="margin: auto;" id="AbrirDIV" class="media-bottom" value="clickme" >Abrir Aba</button>
+<button style="margin: auto;" id="AbrirDIV2" class="media-bottom" value="clickme2">AbrirDIV2</button>
+</div>
+</div> 
+ <section>
+<div id="clickme"> 
+  <div class="container-fluid" id="Mostrar" style="border: 3px; padding: 70px 16px; background-color: cornflowerblue;">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Endereço de E-mail</label>
+        <br>
+        <input type="email" style="padding: 70;" id="exampleInputEmail1" placeholder="Email" >
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Senha</label>
+        <br>
+        <input type="password" style="padding: 70;" id="exampleInputPassword1" placeholder="Password" minlength="8" maxlength="12">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">Inserir arquivo</label>
+        <input type="file" id="exampleInputFile">
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Lembre-se de mim</label>
+      </div>
+      <button type="submit" class="btn btn-default"> Enviar </button>
+    </form>
+  </div>
+  </div>
+</section>
+
+<section>
+<div id="clickme2"> 
+<div class="container-fluid" id="MostrarDIV2" style="border: 3px; padding: 70px 16px; background-color: plum;">
+<form>
+  <div class="form-group">
+    <label>Defina um IP FIXO</label>
+    <br>
+    <input type="number" style="padding: 70;" class="input-box" placeholder="xxx.xxx.xxx.xx" autocomplete="off" />
+    </div>
+    <button type="submit" class="btn "> Confirmar </button>
+    <div class="form-group">
+      <br>
+      <br>
+    <label>Defina forma de conexão</label>
+    <br>
+    <select name="select">
+    <option value="valor1">Estatico</option>
+    <option value="valor2" selected>DHCP</option>
+    <option value="valor3">Proxy</option>
+  </select>
+  <br>
+  <br>
+  <input type="number" style="padding: 70;" class="input-box" placeholder="xxx.xxx.xxx.xx" autocomplete="off" />
+
+    <br>
+    <br>
+    <button type="submit" class="btn "> Salvar </button>
+ 
+</form>
+   </div>
+  </div>
+</section>
+
+<script>
+var fechado =true;
+$( "#AbrirDIV" ).click(function() {
+  if(fechado ){
+  $( "#Mostrar") .animate( { opacity: 50, left: "+=50", height: "toggle" });
+  fechado=false;  
+  }
+});
+$("#AbrirDIV") .click(function(e){
+  if(fechado==false)
+  {
+    $("#Mostrar") .animate ({left: "0px"});
+    fechado=true;
+  }
+  e.stopPropagation();
+  });  
+</script>
+
+<script>
+  
+  var fechado =true;
+  $( "#AbrirDIV2" ).click(function() {
+    if(fechado ){
+    $( "#MostrarDIV2") .animate( { opacity: 50, left: "+=50", height: "toggle" });
+    fechado=false;  
+    }
+  });
+  
+  
+  
+  $("#AbrirDIV2") .click(function(e){
+    if(fechado==false)
+    {
+      $("#MostrarDIV2") .animate ({left: "0px"});
+      fechado=true;
+    }
+    e.stopPropagation();
+    });
+</script>
+<script>
+
+
+</script>
+
+  <!-- <nav class="navbar fixed-bottom navbar-light bg-light">
+
+
+
+    function CommaFormatted(amount) {
+	var delimiter = ","; // replace comma if desired
+	var a = amount.split('.',2)
+	var d = a[1];
+	var i = parseInt(a[0]);
+	if(isNaN(i)) { return ''; }
+	var minus = '';
+	if(i < 0) { minus = '-'; }
+	i = Math.abs(i);
+	var n = new String(i);
+	var a = [];
+	while(n.length > 3) {
+		var nn = n.substr(n.length-3);
+		a.unshift(nn);
+		n = n.substr(0,n.length-3);
+	}
+	if(n.length > 0) { a.unshift(n); }
+	n = a.join(delimiter);
+	if(d.length < 1) { amount = n; }
+	else { amount = n + '.' + d; }
+	amount = minus + amount;
+	return amount;
+}
+</nav>
+-->
+
+<!--
+   var targetDiv = document.getElementById('content');
+        var htmlContent = '';
+        
+        function populateData(event){
+          switch(event.target.value){
+            case 'A':{
+             htmlContent = 'Content for A';
+              break;
+            }
+            case 'B':{
+              htmlContent = "content for B";
+    break;
+            }
+          }
+          targetDiv.innerHTML = htmlContent;
+        }
+      -->
+
+</div>
+</body>
+</html> 

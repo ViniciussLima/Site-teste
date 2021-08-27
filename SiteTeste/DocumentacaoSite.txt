@@ -1,0 +1,7 @@
+				Desenvolvimento do site
+
+- Desenvolvimento de uma taskbar para centralizar alguns botoes iniciais como: 8 botoes contendo alguma mini-informaçao linkavel, e tera um botao no canto superior esquerdo com o nome : RedeWifi para fazer a conexao HTML ou CDM ou XLSx ou SHH ou WIFI.
+
+- Logo apos é criado um container para conter o nome do Projeto (REVIW LAB) e um botao começar que vai para o mesmo link do RedeWifi.
+
+- Em seguida é criado um container com um efeito responsivo ao iniciar, pois em seguida tera uma informação de como funciona o site, explicando os primeiros passos.

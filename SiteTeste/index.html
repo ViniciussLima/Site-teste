@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<!-- dando nome para o site, fica na barra de "clica e arrasta"-->
+<title>Review Lab</title>
+
+
+<!-- Aqui da formato para a pagina, como taskbar e tabelas paras o botoes-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+
+</head>
+
+<!-- começamos como style(estilo) iniciando as tags body,h1,h2,h3,h4,h5,h6
+e dando uma fonte para cada uma delas, que no caso seria Lato  -->
+
+<!-- em seguida, é dado forma para a taskbar .w3-bar,h1,button, e modifica as fonte das le  tras -->
+
+<!-- em seguida ajusta as fontes utilizada em cada 
+'tag"-->
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Lato", sans-serif}
+</style>
+ 
+<style>
+
+
+input {
+  background: url(C:\Users\marinvin\.vscode\extensions\ecmel.vscode-html-css-1.10.2) none;
+  max-width: max-content;
+  max-height: max-content;
+}
+</style>
+
+
+<body>  
+<!-- aqui se inicia a barra de navegação -->
+<!-- em seguida cria botoes linkaveis para acessar o tipo de aparelho para utilizar-->
+<div class= "BarraTarefa"> 
+  
+    <!--Botoes clicaveis com efeito, para, acessar as workstation desejada e pegar os valores desejado-->
+    <!--os botoes abaixo sao os aparelhos em que o rasp pode fazer uma conexao WEB-Server ou ma conexao SSH-Terminal-->
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-animate-zoom">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-animate-zoom">Ecil-Lab</a>
+    <!-- EcilLab.html -->
+
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-animate-zoom">Steel-Lab</a>
+    <!-- SteelLab.html -->
+
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-animate-zoom">Ferro-Lab</a>
+    <!-- FerroLab.html -->
+
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white w3-animate-zoom">Ecil-Lab-Hydrogen</a>
+    <!-- Hydrogen.html -->
+
+    <a href="MeltTherm.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-animate-zoom">Melt-Therm</a>
+
+    <a href="TelaFormularioUM.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-animate-zoom"> Formulario</a>
+
+    <a href="Login.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-animate-zoom"> Login </a>
+       <!--  -->
+
+    <!-- <a href="sitecss.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-animate-zoom">CONFIG SET</a>
+    <a href="sitecss.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-animate-zoom">PARAM</a>
+    <a href="sitecss.html" class="w3-bar-item w3-button w3-padding-large w3-white w3-animate-zoom">SYSTEM</a> -->
+
+    <!-- aqui ele so pode especificamente fazer conexao wifi, ou html.-->
+    <!--botao com simbolo de wifi para fazer a conexao com aparelhos disponiveis, ele levará a outra 
+    aonde ele abrirá uma pagina de login, para entrar com usuario e senha para obter a permissao de utilizar as conexões. 
+    Apos estar conectado ele ira abrir uma para fazer a escolha da maquina virtual desejada-->
+    <a name="WifiRede" href="RedeWifi.html"><img src="RedeWifi.png" width="76" height="45" class=" w3-button w3-bar-item w3-right w3-animate-zoom "></img></a> 
+   
+   
+    <a input type="button" class="botao"></a>
+
+
+    <!-- Primeiro container -->
+<header class="w3-container w3-blue-grey w3-center" style="padding:128px 16px">
+
+  <!--inserido dentro do primeiro container o nome do serviço, REVIEW-LAB-->
+  <h1 class="w3-margin w3-jumbo">REVIEW LAB</h1>
+  <p class="w3-large">My first site utilizing framework W3.css</p>
+
+<!-- aqui ira ter um botao de começar para o usuario clicar e fazer login, com usuario e 
+      senha para obter permissao de utilizar as conexões. Apos estar conectado ele ira abrir uma
+      para fazer a escolha da maquina virtual desejada-->
+  <a href="#.html" button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-animate-zoom" >Start</button></a>
+
+  <a href="TelaFormularioUM.html" button class="w3-button w3-black w3-padding-large w3-large w3-margin-top w3-animate-zoom" >Formulario</button></a>
+</header>
+
+<!-- Primero Corpo (Explica o funcionamento) -->
+<!-- Cria um container  aonde iremos inserir os textos explicativos-->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <!--Faz com que o site seja responsivo-->
+    <div class="w3-twothird">
+
+      <!--um breve texto de como é o funcionamento do equipamento:
+      
+      REVIEW-LAB é uma ferramenta totalmente inovadora com o objetivo de aproximar
+       o desenvolvedor de seu próprio produto, é um projeto pensado para o conforto 
+       dos trabalhadores em meio a uma pandemia de 2021 COVID-19. REVIEW LAB é um site 
+       desenvolvido para estabelecer a ligação com os nossos sistemas de utilização em 
+       dias úteis. A operação ocorre por meio de uma conexão de um dispositivo conectado 
+       ao IO (internet das coisas "Framboesa-pi" "Raspberri-pi") "O Raspberri-pi acessará o 
+       dispositivo; LinkBOX, que é responsável pela decodificação e armazenamento à medida 
+       que ocorre em tempo real gerado no campo de produção, ou em um laboratório de testes, 
+       e se reproduzirá online.Esta nova tecnologia é capaz de simular qualquer uma de nossas 
+       máquinas utilizadas em campo em um servidor WEB, em tempo real.-->
+
+       <!--acrescentar que tambem pode ser acessada pela internet-->
+      <h1>How use</h1>
+      <h5 class="w3-padding-32">
+        REVISÃO LAB is a totally innovative tool in order to bring the developer closer to his own product,
+         it is a project designed for workers' comfort in the midst of a 2021 pandemic COVID-19. REVIEW LAB
+          is a website developed to establish a connection with our systems of use used on working days. 
+          The operation takes place via a connection of a device connected to the IO
+           (internet of things "Framboesa-pi" "Raspberri-pi") Raspberri-pi will access the device; LinkBOX, which
+            is responsible for decoding and storing as it occurs in real time generated in the production field,
+             or in a test laboratory, and reproduced online. This new technology is capable of simulating any
+              of our machines used in the field on a WEB server, in real time.
+        </h5>
+    </div>
+    <!--Insere a imagem e posiciona ela em um ponto fixo da tela, ou seja, ela nao é reendenizavel, significa
+    se o site diminiur de tamanho ela ficará mal posicionada na pagina-->
+      <i><img src="UserR.jpg" width="497" height="280";  style="position:absolute; left: 840px ; top:700px;"></i>
+
+
+      
+    </div>
+  </div>
+</div>
+<!--aqui criamos um container com uma cor solida e opacao, na tonalidade acizentada 
+para nao terminar a pagina em "seco"-->
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+</div>
+</body>
+</html>

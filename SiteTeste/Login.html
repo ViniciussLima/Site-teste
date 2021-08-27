@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário de Login e Registro com HTML5 e CSS3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="Login.css" />
+</head>
+<body>
+
+    <!-- aqui se cria container: dentro dos container sao criadas duas ancoras no formato link com "ID"-->
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     
+    <div class="content">      
+      <!--FORMULÁRIO DE LOGIN-->
+     
+      <div id="login">
+        <form method="post" action=""> 
+          <h1>Login</h1>
+          <p> 
+            <label for="nome_login">Seu Login</label>
+            <!--aqui se cria um input para inserir o nome de email cadastrado no sistema-->
+            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="Contato@E-mail.com"/>
+          </p>
+           
+          <p> 
+            <label for="email_login">Senha</label>
+            <!--Input para inserir a senha-->
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="senha" /> 
+          </p>
+           
+          <p> 
+              <!--aqui se cria um check box, (botao pra selecionar a opção de, lembrar de mim, para nao desfazer login)-->
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p> 
+           
+          <p> 
+              <!--botao para enviar as credencias para o banco de dados e fazer com que o login seja efetuado-->
+            <input type="submit" value="Logar" /> 
+          </p>
+           <!--aqui se cria uma ancora com link de referencia para fazer cadastro caso nao tenha um login cadastrado-->
+          <p class="link">
+            Ainda não tem conta?
+            <a href="index.html">Home</a>
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+ 
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+           
+          <p> <!--aqui solicita para que insira um nome para cadastro do usuario-->
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+          </p>
+           
+          <p> <!--aqui solicita um email para  USUARIO UTILIZAR PARA ACESSAR A PAGINA-->
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+          </p>
+           
+          <p> <!--aqui pede-se que crie uma senha para acessar seu e-mail-->
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+           
+          <p> <!--aqui se cria o batao de confirmação de credenciais, ao clicar em cadastrar ele solicitara
+          ao banco de dados uma requisição para saber se o nome e o e-mail estao disponiveis para cadastrar tais credenciais-->
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+           <!--caso vc ja tenha uma conta, voce pode apenas selecionar o botao ir para login, e fazer o login na sua conta direto-->
+          
+           <p class="link">  
+            Já tem conta?
+            <a href="index.html">Home</a>
+            <a href="#paralogin"> Ir para Login </a>
+
+            
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>

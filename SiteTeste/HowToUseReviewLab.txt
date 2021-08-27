@@ -1,0 +1,21 @@
+O REVIEW LAB é uma ferramenta totalmente inovadora com o intuito de aproximar mais o desenvolvedor com seu proprio produto, é um projeto pensado na comodidade do trabalhador em meio a pandemia de 2021 o COVID-19. O REVIEW LAB é um site desenvolvido para estabelecer uma conexão com os nossos sistemas de medições utilizado em dias de trabalho. O funcionamento ocorre via uma conexão de um aparelho conectado na IO (internet das coisas "Raspberry-pi")o Raspberry irá acessar o aparelho; LinkBOX, que é responsavel por decodificar e armazenar as medições em tempo real gerada no campo de produção, ou em um laboratorio de teste, e reproduzira online. Esta nova tecnologia é capaz de simular qualquer uma de nossas máquinas utilizada em campo em um servidor WEB, em tempo real.
+
+
+
+REVIEW-LAB is a totally innovative tool in order to bring the developer closer to his own product, it is a project designed for workers' comfort in the midst of a 2021 pandemic COVID-19. REVIEW LAB is a website developed to establish a connection with our systems of use used on working days. The operation takes place via a connection of a device connected to the IO (internet of things "Framboesa-pi" "Raspberri-pi") "Raspberri-pi will access the device; LinkBOX, which is responsible for decoding and storing as it occurs in real time generated in the production field, or in a test laboratory, and will reproduce online. This new technology is capable of simulating any of our machines used in the field on a WEB server, in real time.
+
+
+
+
+
+
+REVISÃO LAB is a totally innovative tool in order to bring the developer closer to his own product, it is a project designed for workers' comfort in the midst of a 2021 pandemic COVID-19. REVIEW LAB is a website developed to establish a connection with our systems of use used on working days. The operation takes place via a connection of a device connected to the IO (internet of things "Framboesa-pi" "Raspberri-pi") Raspberri-pi will access the device; LinkBOX, which is responsible for decoding and storing as it occurs in real time generated in the production field, or in a test laboratory, and reproduced online. This new technology is capable of simulating any of our machines used in the field on a WEB server, in real time.
+
+
+
+
+
+O LABEL REVIEW, é utilizado para fazer a conexao via uma porta HTML com o equipamento utilizado em laboratorio de testes
+          ou em dias uteis de trabalho, o funcionamento ocorre, na conexao com o LinkBOX, utilizando a conexao remota com o aparelho o aparelho
+          LinkBOX é responsavel por receber os valores obtidos na lança de medição em tempo real,
+          e o LAB REVIEW é responsavel por simular uma area de trabalho de qualquer uma das maquinas que utilizamos em laboratorio</h5>
